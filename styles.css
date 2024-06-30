@@ -68,3 +68,57 @@ margin-right: 10px;
     cursor: pointer;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .display input[type="text"] {
+        flex: 1;
+        /* This allows the input to grow and shrink based on available space */
+        padding: 10px;
+        /* Adjust padding as needed */
+        margin-right: 5px;
+        /* Optional margin for spacing between input and image */
+        max-width: 100%;
+        /* Ensures the input doesn't overflow its container */
+    }
+
+    .display img {
+        flex: 0 0 auto;
+        /* Ensures the image does not grow or shrink */
+        padding: 5px;
+        /* Adjust padding as needed */
+        max-width: 100%;
+        /* Ensures the image doesn't overflow its container */
+    }
+
+                button {
+                    display: flex;
+                    /* Use flexbox for button */
+                    align-items: center;
+                    /* Center align content vertically */
+                    justify-content: center;
+                    /* Center align content horizontally */
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    max-width: 100%;
+                    /* Ensure button fits within container */
+                }
+        
+                button img {
+                    flex: 1;
+                    max-width: 100%;
+                    /* Ensure image fits within button */
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    /* Optional margin between image and text */
+                }
+}
