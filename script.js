@@ -22,3 +22,9 @@ function createPassword() {
     }
     passWordBox.value = password;
 }
+
+function copyPassword() {
+    passWordBox.select();
+    document.execCommand("copy");
+    
+}
